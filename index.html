@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Website</div>
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#profile" class="nav-link">Our Profile</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#message" class="nav-link">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2 id="welcomeText">Hi Guest, Welcome To Website</h2>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="banner">1366 x 578</div>
+  </section>
+
+  <!-- Our Profile -->
+  <section class="profile" id="profile">
+    <h3>Our Profile</h3>
+    <div class="profile-content">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="profile-img">
+      <div>
+        <p><strong>Nama:</strong> John Doe</p>
+        <p><strong>Role:</strong> Web Developer</p>
+        <p><strong>Deskripsi:</strong> Kami adalah tim pengembang web yang berdedikasi untuk membuat website modern dan responsif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <h3>Portfolio</h3>
+    <div class="portfolio-list">
+      <div class="portfolio-item">
+        <img src="https://placehold.co/200x120" alt="Project 1">
+        <h4>Project 1</h4>
+        <p>Website Company Profile</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://placehold.co/200x120" alt="Project 2">
+        <h4>Project 2</h4>
+        <p>Online Shop</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://placehold.co/200x120" alt="Project 3">
+        <h4>Project 3</h4>
+        <p>Landing Page</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headquarter -->
+  <section class="headquarter">
+    <h3>Our Headquarter</h3>
+    <div class="circles">
+      <div class="circle">Jakarta</div>
+      <div class="circle">Bandung</div>
+      <div class="circle">Surabaya</div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message" class="message-us">
+    <h3>Message Us</h3>
+    <div class="form-container">
+      <form id="messageForm">
+        <label>Nama</label>
+        <input type="text" id="name" required>
+
+        <label>Tanggal Lahir</label>
+        <input type="date" id="dob" required>
+
+        <label>Jenis Kelamin</label>
+        <div class="gender">
+          <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+          <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </div>
+
+        <label>Pesan</label>
+        <textarea id="msg" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="output" class="output-box">
+        <!-- Hasil submit tampil di sini -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created By RevoU</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
